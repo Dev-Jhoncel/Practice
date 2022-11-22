@@ -4,12 +4,32 @@
         <title>
                HTML Practices
         </title>
-        <link href="./css/bootstrap.min.css"/>
-        <script src="./js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+        <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+        </style>
     </head>
     <body>
-        <nav class="fix-top" style="background-color: rgb(43, 42, 42); width: 100%; padding: 0px;margin:0%"> 
-            <h4 style="margin: 0px;">HTML Cheat sheet</h4>
-        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="fixed-top" style="background-color: rgb(43, 42, 42); width: 100%; padding: 5px;margin:0%;"> 
+                    <h4 style="margin: 0px; color: antiquewhite;font-style:Rajdhani;">HTML Cheat sheet</h4>
+                </nav>
+            </div>
+        <div class="row float-right mt-5 mr-sm-1">
+            <div class="col-sm btn btn-dark p-1 mr-1">Column 3</div>
+        </div> 
+        <div class="row mt-5 w-100" style="height: 20%; background-color: rgba(255,0,0,0.1);">
+                <div class="col-sm mh-100 mr-1 w-25" style="background-color: rgba(0,0,255,0.1);">
+                    <div class="btn btn-dark p-1 mr-1">Column 1</div>
+                </div>
+                <div class="col-sm mh-100 mr-1 w-50" style="background-color: rgba(0,0,255,0.1);">
+                    <div class="btn btn-dark p-1 mr-1 float-right">Column 1</div>
+                    <div class="btn btn-dark p-1 mr-1 float-right">Column 2</div>
+                    <div class="btn btn-dark p-1 mr-1 float-right">Column 3</div>
+                </div>
+              </div>
+            </div>
     </body>
 </html>
