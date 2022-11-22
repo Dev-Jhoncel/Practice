@@ -4,12 +4,31 @@
         <title>
                HTML Practices
         </title>
-        <link href="./css/bootstrap.min.css"/>
-        <script src="./js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+        <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+        </style>
     </head>
     <body>
-        <nav class="fix-top" style="background-color: rgb(43, 42, 42); width: 100%; padding: 0px;margin:0%"> 
-            <h4 style="margin: 0px;">HTML Cheat sheet</h4>
-        </nav>
+        <div class="container-fluid">
+            <div class="row mt-5 h-100" style="background-color: rgba(255,0,0,0.1);">
+                <nav class="fixed-top border border-dark" style="background-color: rgb(43, 42, 42); width: 100%;margin:0%;"> 
+                    <h4 style="margin: 0px; color: antiquewhite;font-style:Rajdhani;">HTML Cheat sheet</h4>
+                </nav>
+                <div class="col-sm mr-1 w-100">
+                    <div class="btn btn-dark p-1 mr-1 w-100">100%</div>
+                </div>
+                <div class="col-sm mr-1 w-100">
+                     <div class="btn btn-dark p-1 mr-1 float-right w-25">20%</div>
+                </div> 
+                <div class="col-sm mr-1 w-100"> 
+                     <div class="btn btn-dark p-1 mr-1 float-right w-50">50%</div>
+                </div>
+                <div class="col-sm mr-1 w-100">
+                    <div class="btn btn-dark p-1 mr-1 float-right w-50">50%</div>
+                </div>
+            </div>
+        </div> 
     </body>
 </html>
