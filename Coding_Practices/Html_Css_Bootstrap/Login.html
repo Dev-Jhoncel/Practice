@@ -1,62 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>
-            Responsive Login Form
-     </title>
-     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Login Form</title>
      <script type="text/javascript" src="./js/bootstrap.min.js"></script>
      <style>
-        body
-        {
-            height: 100%;
-        }
-        .container-fluid
-        {
-            background-color: rgb(41, 43, 43);
-            display: grid;
-            grid-template-columns: 100px 50px auto 50px 100px;
-            grid-template-rows: 500px auto 80px;
-            row-gap: 15px 10px;
-        }
-        #loginForm
-        {
-            margin: auto;
-            border-radius: 2%;
-            display: grid;
-            grid-template-columns: 10% auto 10%;
-            grid-template-rows: auto;
-            row-gap: 10px 10px;
-            width: 500px; height: 100%; background-color: rgba(236, 231, 231, 0.164);
-            align-items: center;
-        }
-        .form-group
-        {
-            display: grid;
-            grid-template-columns: auto;
-            grid-template-rows:50% 50% 50% 60%;
-        }
-        #login
-        {
-            text-align: center;
-        }
+       @import url('../Html_Css_Bootstrap/MyCSS/style.css');
      </style>
     </head>
     <body>
-        <div class="container-fluid">
+        <main>
+            <header></header>
+            <section class="container-fluid">
                 <div style="width: 100px; height: 100px; background-color:  rgb(41, 43, 43);"></div>
                 <div style="width: 100px; height: 100px; background-color: rgb(41, 43, 43);"></div>
                 <div class="center mt-4" id="loginForm">
                     <span></span>
-                    <div class="form-group">
-                            <label style="text-align: center; font: 2.5em sans-serif;">Login</label>
-                            <input class="w-100 h-50 form-control" type="text"/>
-                            <input class="w-100 h-50 form-control" type="text"/>
+                    <div class="form-group mb-1">
+                            <span class="form-control" style="border: 0px;color: aliceblue;background-color:  rgba(236, 231, 231, 0)">Username: <input class="w-100 h-50 form-control" type="text"/></span>
+                            <span class="form-control" style="border: 0px;color: aliceblue;background-color:   rgba(236, 231, 231, 0)">Password: <input class="w-100 h-50 form-control" type="text"/></span>
                             <input class="btn btn-info w-50 form-control" type="button" value="Submit" style="margin: auto;"/>
                     </div>
                 </div>
                 <div style="width: 100px; height: 100px; background-color: rgb(41, 43, 43);"></div>
                 <div style="width: 100px; height: 100px; background-color:  rgb(41, 43, 43);"></div>
-        </div>
+        </section>
+        <footer></footer>
+        </main>
     </body>
 </html>
