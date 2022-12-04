@@ -2,15 +2,89 @@
 <html>
     <head>
         <title>
-               HTML Practices
+               Web Development Coding Practices
         </title>
-        <link href="./css/bootstrap.min.css"/>
-        <script src="./js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+        <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+        </style>
     </head>
     <body>
-        <nav class="" style="background-color: rgb(43, 42, 42); width: 100%; padding: 0px;margin:0%"> 
-            <h4 style="margin: 0px;">HTML Cheat sheet</h4>
-        </nav>
-        <div></div>
+        <div class="container-fluid">
+            <!-- Sizing -->
+            <div class="row mt-5 h-100" style="background-color: rgba(255,0,0,0.1);">
+                <nav class="fixed-top border border-dark" style="background-color: rgb(43, 42, 42); width: 100%;margin:0%;"> 
+                    <h4 style="margin: 0px; color: antiquewhite;font-style:Rajdhani;">HTML Cheat sheet</h4>
+                </nav>
+                <div class="col-md mr-1 w-100">
+                    <div class="btn btn-dark p-1 mr-1 w-100">100%</div>
+                </div>
+                <div class="col-md mr-1 w-100">
+                     <div class="btn btn-dark p-1 mr-1 float-right w-25">20%</div>
+                </div> 
+                <div class="col-md mr-1 w-100"> 
+                     <div class="btn btn-dark p-1 mr-1 float-right w-50">50%</div>
+                </div>
+                <div class="col-md mr-1 w-100">
+                    <div class="btn btn-dark p-1 mr-1 float-right w-50">50%</div>
+                </div>
+            </div>
+            <!-- Form -->
+            <div class="row w-75 mt-1 p-1 rounded" style="background-color: rgb(182, 178, 178);margin:auto;">
+                <div class="col-md h-50 w-100 rounded" style="background-color: white;" >Box Sizing
+                    <form class="form-group m-auto">
+                        <div class="form-control row p-1 m-auto border-0">
+                        <input class="col p-0 mr-1 " type="text"/>
+                        </div>
+                        <div class="form-control row p-1 m-auto border-0">
+                            <input class="col p-0 mr-1 " type="text"/>
+                        </div>
+                        <div class="form-control row p-1 m-auto border-0">
+                            <input class="col btn btn-success mr-1 " value="Submit" type="button"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Input -->
+            <div class="row w-100 mt-1 p-1 rounded" style="background-color: rgb(252, 248, 248);margin:auto;">
+                <label>INPUTS</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <span class="input-group-text" id="basic-addon2">@example.com</span>
+                    </div>
+                  </div>
+                  <label for="basic-url">Your vanity URL</label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                    </div>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                  </div>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">$</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <div class="input-group-append">
+                      <span class="input-group-text">.00</span>
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">With textarea</span>
+                    </div>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                  </div>
+            </div>
+        </div> 
     </body>
 </html>
