@@ -16,11 +16,20 @@ body
     margin: auto;
     border-radius: 2%;
     min-width: 370px; 
-    min-height: 100%; 
-    background-color: rgba(236, 231, 231, 0.164);
+    height: 100%;
     align-items: center;
 }
-
+.classImage
+{
+    margin: auto;
+    align-items: center;
+    width: max-content;
+    min-height: 45%;
+}
+.formbody
+{
+ min-height: 480px;
+}
 .project_item
 {
     background-color:  rgb(41, 43, 43);
