@@ -3,30 +3,42 @@
     <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id" content="761327165458-lgsl91quvnsdp9sjr5mqgrmheit6el1q.apps.googleusercontent.com">
     <title>Responsive Login Form</title>
-     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
      <style>
        @import url('../Html_Css_Bootstrap/MyCSS/style.css');
      </style>
+     <script>
+       
+     </script>
     </head>
     <body>
+        <script type="text/javascript" src="./js/bootstrap.min.js">
+       function onSignIn(googleUser) 
+        {
+            var profile = googleUser.getBasicProfile();
+            console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+            console.log('Name: ' + profile.getName());
+            console.log('Image URL: ' + profile.getImageUrl());
+            console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+        }
+        </script>
         <main>
             <header></header>
-            <section class="container-fluid">
-                <div style="width: 100px; height: 100px; background-color:  rgb(41, 43, 43);"></div>
-                <div style="width: 100px; height: 100px; background-color: rgb(41, 43, 43);"></div>
-                <div class="center mt-4" id="loginForm">
-                    <span></span>
-                    <div class="form-group mb-1">
-                            <span class="form-control" style="border: 0px;color: aliceblue;background-color:  rgba(236, 231, 231, 0)">Username: <input class="w-100 h-50 form-control" type="text"/></span>
-                            <span class="form-control" style="border: 0px;color: aliceblue;background-color:   rgba(236, 231, 231, 0)">Password: <input class="w-100 h-50 form-control" type="text"/></span>
-                            <input class="btn btn-info w-50 form-control" type="button" value="Submit" style="margin: auto;"/>
+            <div class="container-fluid loginForm">
+                 <div class="form-control formbody">
+                    <div class="classImage">
+                        <img src="../Html_Css_Bootstrap/images/peso.ico" alt="peso">
                     </div>
-                </div>
-                <div style="width: 100px; height: 100px; background-color: rgb(41, 43, 43);"></div>
-                <div style="width: 100px; height: 100px; background-color:  rgb(41, 43, 43);"></div>
-        </section>
-        <footer></footer>
+                        <span class="form-text" style="font-weight: 600;">Username<input class="h-50 mt-lg-1 form-control " type="text"/></span>
+                        <span class="form-text" style="font-weight: 600;">Password<input class="h-50 mt-lg-1  form-control " type="password"/></span>
+                        <span class="form-text" style="font-weight: 400;">&nbsp;<input class="btn mt-lg-1 btn-primary form-control" type="button" value="Submit"/></span>
+                        <div class="g-signin2 form-text" data-onsuccess="onSignIn"></div>
+                    </div>
+            </div>
+        <footer>
+
+        </footer>
         </main>
     </body>
 </html>

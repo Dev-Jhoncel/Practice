@@ -1,33 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 body
 {
-    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(247, 242, 242, 0.959);
 }
 .container-fluid
 {
-    background-color: rgb(41, 43, 43);
-    display: grid;
-    grid-template-columns: 100px 50px auto 50px 100px;
-    grid-template-rows: 500px auto 80px;
-    row-gap: 15px 10px;
-}
-#loginForm
-{
     margin: auto;
-    border-radius: 2%;
-    display: grid;
-    grid-template-columns: 10% auto 10%;
-    grid-template-rows: auto;
-    row-gap: 10px 10px;
-    width: 500px; height: 100%; background-color: rgba(236, 231, 231, 0.164);
+    border-radius: 5%;
+    min-width: 370px; 
+    height: 100%;
     align-items: center;
 }
-.form-group
+.classImage
 {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows:50% 50% 50% 60%;
+    margin: auto;
+    align-items: center;
+    width: max-content;
+    min-height: 45%;
 }
-#login
+.formbody
 {
-    text-align: center;
+  min-height: 480px;
+}
+.project_item
+{
+    background-color:  rgb(41, 43, 43);
+}
+.borderX
+{
+    border: 1px rgb(184, 169, 169) solid;
 }
