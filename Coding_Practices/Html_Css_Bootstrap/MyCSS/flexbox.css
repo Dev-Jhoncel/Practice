@@ -1,0 +1,127 @@
+.box-Flex
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(238, 236, 236, 0.959);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gotham','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.div1
+{
+    background-color: aliceblue;
+    /* background-image: url(../images/coffeebean.png);
+    background-repeat: no-repeat;
+    background-size: 100%; */
+}
+.div1, .div2 
+{
+    font-weight:  600px;
+    text-align: center;
+    height: 100vh;
+}
+input
+{
+    padding: 10px;
+    border: 0;
+    background-color: rgba(223, 215, 215, 0.959);
+    margin-right: 1px;
+    font-size:  16px;
+}
+.div2
+{
+    background-color: aliceblue;
+}
+.divHeaderparent
+{
+  display: flex;
+  padding: 1px;
+  flex-flow: row nowrap;
+  border-bottom: 1px solid  rgba(155, 150, 150, 0.959);
+  position: fixed;
+  width: 100%;
+  height: max-content;
+  background-color:rgba(223, 215, 215, 0.959);
+}
+.navtext
+{
+    font-size: small;
+    font-weight: 600;
+    color: #ce821e;
+}
+h1
+{
+    padding: 1px;
+    margin-left: 0.5%;
+    width: 25%;
+    color: #ce821e;
+}
+.topbar1
+{
+    margin-left: 1%;
+    width: 50%;
+    display: flex;
+    flex-direction:  row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.topBar
+{
+    width: 50%;
+    display: flex;
+    flex-direction:  row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.box-model
+{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+    background-image: url(../images/BACKCOFFE.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.flex-item-first
+{
+    flex: 0 0 100%;
+    background-color: rgba(209, 204, 204, 0.178);
+    max-width: 100%;
+}
+label
+{
+    font-weight: bolder;
+    font-size: 100px;
+}
+p
+{
+   font-size: medium;
+   font-weight: 400; 
+}
+.welcomMsg
+{
+    position: relative;
+    top: 30%;
+    color: aliceblue;
+}
+.flex-item
+{
+    padding: 1px;
+    flex-wrap: nowrap;
+    flex: 1 1 100px;
+    background-color: rgba(222, 184, 135, 0.473);
+    border: .1em solid aliceblue;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
