@@ -31,6 +31,13 @@
         font-weight: bolder;
         font-size: 100px;
     }
+    .div2
+    {
+    background-color: aliceblue;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 @media only screen and (max-width: 1200px){
     .welcomMsg
@@ -47,6 +54,13 @@
     {
         font-weight: bolder;
         font-size: 50px;
+    }
+    .div2
+    {
+    background-color: aliceblue;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -86,15 +100,12 @@ input
     margin-right: 1px;
     font-size:  16px;
 }
-.div2
-{
-    background-color: aliceblue;
-}
+
 .divHeaderparent
 {
   z-index: 9999;
   display: flex;
-  padding: 1px;
+  padding: 0.5px;
   flex-flow: row nowrap;
   border-bottom: 1px solid  rgba(155, 150, 150, 0.959);
   position: fixed;
@@ -104,9 +115,12 @@ input
 }
 .navtext
 {
+    padding: 10px;
     font-size: small;
     font-weight: 600;
     color: #ce821e;
+    text-decoration: none;
+    margin-right: 2px;
 }
 h1
 {
@@ -162,8 +176,9 @@ h1
 .flex-item
 {
     padding: 1px;
-    flex-wrap: nowrap;
-    flex: 1 1 100px;
+    /* flex-wrap: nowrap;
+    flex: 1 1 100px; */
+    font-size: 10em;
     background-color: rgba(222, 184, 135, 0.473);
     border: .1em solid aliceblue;
 }
