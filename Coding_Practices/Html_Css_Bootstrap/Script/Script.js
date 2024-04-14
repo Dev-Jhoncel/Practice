@@ -13,10 +13,22 @@ var table = document.getElementById("castMember");
 table.replaceChildren();
 
 var tddata = document.createElement('td');
-movie.Cast.forEach(function(item){
+movie.Cast.forEach(function(item,index){
     var trdata = document.createElement('tr');
-    trdata.append(tddata.innerText = item);
+    trdata.append(`${++index}. ${tddata.innerText = item}`);
     table.append(trdata);
     console.log(item);
 });
+
+const myArray = [1, 2, 3, 4]
+myArray.forEach( (item, index) => {
+    myArray[index] = ++item;
+    console.info(`index: ${index}`);
+    console.info(item);
+});
+
+function myfunc(x,y) {
+    return(x+y);
+   }
+   console.log("answer: ",myfunc(2,myfunc(5,-2)));
 
