@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Upload Application</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      #uploadForm {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      #uploadButton {
+        cursor: pointer;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+      }
+      #message {
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .success {
+        background-color: #dff0d8;
+        color: #3c763d;
+      }
+      .error {
+        background-color: #f2dede;
+        color: #a94442;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>File Upload Application</h1>
+    <form id="uploadForm">
+      <input type="file" id="fileInput" required />
+      <button type="submit" id="uploadButton">Upload File</button>
+    </form>
+    <div id="message"></div>
+
+    <script>
+      document
+        .getElementById("uploadForm")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+
+          const fileInput = document.getElementById("fileInput");
+          const message = document.getElementById("message");
+          const file = fileInput.files[0];
+
+          if (!file) {
+            message.textContent = "Please select a file to upload.";
+            message.className = "error";
+            return;
+          }
+
+          const formData = new FormData();
+          formData.append("file", file);
+
+          try {
+            const response = await fetch(
+              "https://localhost:44331/api/ObjectStorage/upload",
+              {
+                method: "POST",
+                body: formData,
+              }
+            );
+
+            if (!response.ok) {
+              console.log(`${response}`);
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const result = await response.text();
+            message.textContent = `File uploaded successfully: ${result}`;
+            message.className = "success";
+          } catch (error) {
+            message.textContent = `Upload failed: ${error.message}`;
+            message.className = "error";
+            console.log(`Error Details: ${error}`);
+          }
+        });
+    </script>
+  </body>
+</html>
